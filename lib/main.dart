@@ -10,6 +10,7 @@ void main() {
   WidgetsFlutterBinding.ensureInitialized();
     runApp(
         MaterialApp(
+          theme: ThemeData.light(),
           home: MultiBlocProvider(providers: [
             BlocProvider<BoolCubit>(create: (BuildContext context) => BoolCubit(false)),
             BlocProvider<NavCubit>(create: (BuildContext context) => NavCubit()),

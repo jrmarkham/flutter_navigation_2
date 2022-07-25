@@ -1,14 +1,22 @@
-
-
+import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
+import 'package:navigation_2/src/globals/enums.dart';
+
+
+late double deviceWidth;
+late double deviceHeight;
 
 void initDevice(context) {
   setDeviceDimensions(MediaQuery.of(context).size);
 }
 
-late double width;
-late double height;
+
+late double menuHeight;
+
+
+
 void setDeviceDimensions(Size size) {
-  width = size.width;
-  height = size.height;
+  deviceWidth = size.width;
+  deviceHeight = size.height;
+  // create function to get this ...
 }

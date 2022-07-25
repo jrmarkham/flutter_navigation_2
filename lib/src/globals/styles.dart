@@ -13,8 +13,6 @@ const String titleFont = 'KautivaCapsBlack';
 const Offset offsetTwo = Offset(2.0, 2.0);
 const Offset offsetSeven = Offset(7.0, 7.0);
 // TITLE
-//
-//
 // TextStyle titleTextStyle({BaseColor? color, bool doubleSize = false}) => TextStyle(
 //         fontSize: doubleSize ? 2 * titleFontSize : titleFontSize,
 //         fontFamily: titleFont,

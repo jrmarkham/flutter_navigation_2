@@ -1,6 +1,8 @@
 
 import 'package:flutter/material.dart';
+import 'package:navigation_2/src/ui/screens/scaffolds/main_screen_scaffold.dart';
 
+import '../../globals.dart';
 import '../widgets/main_buttons.dart';
 
 class AltThree extends StatelessWidget {
@@ -8,9 +10,9 @@ class AltThree extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title:  const Text('Alt Three')),
-      body: Column(
+    return MainScreenScaffold(
+      appBarContent: AppBar(title:  const Text('Alt Three')),
+      bodyContent: Column(
 
         children: const [
 

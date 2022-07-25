@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:navigation_2/src/globals/numbers.dart';
 import 'package:navigation_2/src/ui/widgets/submit_button.dart';
 
 import '../../data/blocs/form/form_cubit.dart';
 import '../../data/models/form_field/form_field_element.dart';
 import '../../utils/form_bloc_util.dart' as form_bloc_utils;
 import '../widgets/main_buttons.dart';
+import 'scaffolds/main_screen_scaffold.dart';
 
 const Duration _duration = Duration(milliseconds: 500);
 
@@ -17,9 +19,9 @@ class AltOne extends StatelessWidget {
     final FormCubit testForm =
         FormCubit(initName: 'testForm', initElements: form_bloc_utils.defaultForm(addDefault: true, firstName: 'John', lastName: 'Markham'));
 
-    return Scaffold(
-        appBar: AppBar(title: const Text('Alt One')),
-        body: BlocConsumer<FormCubit, FormCubitStateModel>(
+    return MainScreenScaffold(
+        appBarContent: AppBar(title: const Text('Alt One')),
+        bodyContent: BlocConsumer<FormCubit, FormCubitStateModel>(
             bloc: testForm,
             listener: (BuildContext context, FormCubitStateModel state) {
               if (state.flowState == FormFlowState.formBlocStateErrorReport) {
