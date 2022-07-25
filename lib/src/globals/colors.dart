@@ -1,0 +1,60 @@
+// Flutter imports:
+import 'package:flutter/material.dart';
+
+// COLORS
+const Color colorRed = Colors.red;
+const Color colorMaroon = Color(0xFF550000); // ;
+const Color colorYellow = Colors.yellow;
+const Color colorYellowDark = Color(0xFF9E8E00);
+const Color colorBlue = Colors.blue;
+const Color colorBlueDark = Color(0xFF092E6E);
+const Color colorGreen = Colors.green;
+const Color colorGreenDark = Color(0xFF095708);
+const Color colorOrange = Colors.orange;
+const Color colorOrangeDark = Color(0xFFA67219);
+const Color colorPurple = Colors.deepPurple;
+const Color colorPurpleDeep = Color(0xFF3B0E69);
+const Color colorBrown = Colors.brown;
+Color colorBrownDark = const Color(0xFF361F09);
+
+Color colorBrownLight = const Color(0xFF90662B);
+
+Color colorBrownFade = Colors.brown.shade500;
+
+const Color colorPink = Colors.purpleAccent;
+// BLACKS AND WHITES
+const Color colorGrey = Colors.grey;
+const Color colorGreyDark = Color(0xFF444444);
+const Color colorGreyLight = Color(0xFFBBBBBB);
+
+const Color colorBlack = Colors.black;
+const Color colorWhite = Colors.white;
+// FADES
+const Color colorTransparent = Colors.transparent;
+const Color colorWhiteFade = Colors.white60;
+const Color colorWhiteTextFade = Color(0xCCFFFFFF);
+
+// Icon and Icon Button Settings
+const Color colorMain = colorMaroon; // colorMaroon;
+//const Color colorDark = Color(0xFF330000);
+//const Color colorLight = Color(0xFF87322b);
+
+const Color colorSecondary = colorYellowDark; // colorYellowDark;
+//const Color colorSecDark = Color(0xFF9E8E00);
+//const Color colorSecLight = Color(0xFFFFF053);
+
+const Color colorContrast = colorWhite;
+const Color colorBack = colorWhite;
+const Color colorIcon = colorMain;
+const Color colorInactive = colorGrey;
+const Color colorAppTrack = colorGreyLight;
+const Color colorSelected = colorGrey;
+const Color colorError = colorRed;
+
+//// user select colors
+//Color userColor = colorGreen;
+//Color userSecondColor = colorBlue;
+//Color opponentColor = colorRed;
+Color colorSwipe = colorRed;
+
+Color setSwipeColor(bool show) => colorSwipe = show ? colorRed : colorTransparent;
