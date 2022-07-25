@@ -7,7 +7,7 @@ import '../../data/blocs/form/form_cubit.dart';
 import '../../data/models/form_field/form_field_element.dart';
 import '../../utils/form_bloc_util.dart' as form_bloc_utils;
 import '../widgets/main_buttons.dart';
-import 'scaffolds/main_screen_scaffold.dart';
+import 'scaffolds/core_scaffold.dart';
 
 const Duration _duration = Duration(milliseconds: 500);
 
@@ -19,7 +19,7 @@ class AltOne extends StatelessWidget {
     final FormCubit testForm =
         FormCubit(initName: 'testForm', initElements: form_bloc_utils.defaultForm(addDefault: true, firstName: 'John', lastName: 'Markham'));
 
-    return MainScreenScaffold(
+    return CoreScaffold(
         appBarContent: AppBar(title: const Text('Alt One')),
         bodyContent: BlocConsumer<FormCubit, FormCubitStateModel>(
             bloc: testForm,

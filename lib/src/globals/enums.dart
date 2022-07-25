@@ -1,8 +1,8 @@
 import '../globals.dart';
 
 const double menuHeightFactorWeb = 0.1;
-const double menuHeightFactorMobile = 0.15;
-const double menuHeightFactorTablet = 0.09;
+const double menuHeightFactorMobile = 0.115;
+const double menuHeightFactorTablet = 0.085;
 const double menuHeightFactorTV = 0.09;
 
 

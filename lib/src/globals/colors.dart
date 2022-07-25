@@ -1,6 +1,112 @@
 // Flutter imports:
 import 'package:flutter/material.dart';
 
+
+enum BaseColor {
+  white,
+  black,
+  red,
+  maroon,
+  yellow,
+  yellowDark,
+  blue,
+  blueDark,
+  green,
+  greenDark;
+
+//   orange,
+//   colorOrangeDark,
+//    colorPurple,
+//    colorPurpleDeep,
+//    colorBrown,
+//    colorBrownDark,
+//    colorBrownLight,
+//    colorBrownFade,
+//    colorPink,
+// // BLACKS AND WHITES
+//    colorGrey,
+//    colorGreyDark,
+//    colorGreyLight,
+//
+// // FADES
+//    colorTransparent,
+//    colorWhiteFade,
+//    colorWhiteTextFade;
+
+  Color getColor() {
+    switch (this) {
+      case BaseColor.white:
+        return colorWhite;
+      case BaseColor.black:
+        return colorBack;
+      case BaseColor.red:
+        return colorRed;
+      case BaseColor.maroon:
+        return colorMaroon;
+      case BaseColor.yellow:
+        return colorYellow;
+      case BaseColor.yellowDark:
+        return colorYellowDark;
+      case BaseColor.blue:
+        return colorRed;
+      case BaseColor.blueDark:
+        return colorRed;
+      case BaseColor.green:
+        return colorGreen;
+      case BaseColor.greenDark:
+        return colorGreenDark;
+    }
+  }
+
+  Color getContrastColor() {
+    switch (this) {
+      case BaseColor.white:
+        return colorBlack;
+      case BaseColor.black:
+        return colorWhite;
+      case BaseColor.red:
+        return colorGreenDark;
+      case BaseColor.maroon:
+        return colorGreen;
+      case BaseColor.yellow:
+        return colorPurpleDeep;
+      case BaseColor.yellowDark:
+        return colorPurple;
+      case BaseColor.blue:
+        return colorOrangeDark;
+      case BaseColor.blueDark:
+        return colorOrange;
+      case BaseColor.green:
+        return colorMaroon;
+      case BaseColor.greenDark:
+        return colorRed;
+    }
+  }
+
+  Color getShadowColor() {
+    switch (this) {
+      case BaseColor.white:
+        return colorWhiteFade;
+      case BaseColor.black:
+        return colorGreyLight;
+      case BaseColor.red:
+        return colorMaroon;
+      case BaseColor.yellow:
+        return colorYellowDark;
+      case BaseColor.blue:
+        return colorBlueDark;
+      case BaseColor.green:
+        return colorGreenDark;
+      case BaseColor.yellowDark:
+      case BaseColor.maroon:
+      case BaseColor.blueDark:
+      case BaseColor.greenDark:
+        return colorBack;
+    }
+  }
+}
+
+
 // COLORS
 const Color colorRed = Colors.red;
 const Color colorMaroon = Color(0xFF550000); // ;
